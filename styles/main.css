@@ -1,9 +1,8 @@
-/* the props */
-@import "../node_modules/open-props/open-props.min.css";
+@import "https://unpkg.com/open-props";
 
 /* optional imports that use the props */
-@import "../node_modules/open-props/normalize.min.css";
-@import "../node_modules/open-props/buttons.min.css";
+@import "https://unpkg.com/open-props/normalize.min.css";
+@import "https://unpkg.com/open-props/buttons.min.css";
 
 
 
