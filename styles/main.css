@@ -3,8 +3,79 @@
 @import "https://unpkg.com/open-props/normalize.dark.min.css";
 @import "https://unpkg.com/open-props/buttons.dark.min.css";
 
+html{
+    /* dim */
+  --brand-dim: var(--orange-4);
+  --text-1-dim: var(--gray-3);
+  --text-2-dim: var(--gray-4);
+  --surface-1-dim: var(--gray-8);
+  --surface-2-dim: var(--gray-7);
+  --surface-3-dim: var(--gray-6);
+  --surface-4-dim: var(--gray-5);
+  --surface-shadow-dim: var(--gray-9-hsl);
+  --shadow-strength-dim: 20%;
+}
+
+:root {
+    color-scheme: dark;
+  
+    --brand: var(--brand-dim);
+    --text-1: var(--text-1-dim);
+    --text-2: var(--text-2-dim);
+    --surface-1: var(--surface-1-dim);
+    --surface-2: var(--surface-2-dim);
+    --surface-3: var(--surface-3-dim);
+    --surface-4: var(--surface-4-dim);
+    --surface-shadow: var(--surface-shadow-dim);
+    --shadow-strength: var(--shadow-strength-dim);
+}
+
+[color-scheme="dim"] {
+    color-scheme: dark;
+  
+    --brand: var(--brand-dim);
+    --text-1: var(--text-1-dim);
+    --text-2: var(--text-2-dim);
+    --surface-1: var(--surface-1-dim);
+    --surface-2: var(--surface-2-dim);
+    --surface-3: var(--surface-3-dim);
+    --surface-4: var(--surface-4-dim);
+    --surface-shadow: var(--surface-shadow-dim);
+    --shadow-strength: var(--shadow-strength-dim);
+}
 
 
+body{
+    background-color: var(--);
+}
+
+#body {
+    display: grid;
+    place-content: center;
+    padding: var(--size-7);
+    gap: var(--size-7);
+
+    font-family: var(--font-mono);
+}
+
+header > h1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+nav{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav > button{
+    min-width: var(--size-fluid-7);
+    margin-right: var(--size-2);
+    margin-left: var(--size-2);
+}
 
 #portfolioItems > li{
     flex-basis: var(--size-content-1);
@@ -18,12 +89,8 @@
     box-shadow: var(--shadow-2);
 } 
 
-body {
-    display: grid;
-    place-content: center;
-}
-
-ul{
-    padding: 0;
+img{
+    max-width: var(--size-fluid-10);
+    margin: var(--size-3);
 }
 
