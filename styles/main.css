@@ -30,16 +30,17 @@ html{
 
 
 body{
-    background-color: var(--);
+    background-color: var(--brand);
 }
 
 #body {
     display: grid;
-    place-content: center;
+    place-content: start center;
     padding: var(--size-7);
     gap: var(--size-7);
-
+    background-color: var(--surface-1);
     font-family: var(--font-mono);
+    min-height: 97vh;
 }
 
 header{
@@ -59,7 +60,8 @@ nav > button{
     margin-left: var(--size-2);
 }
 
-main{
+#portfolio main,
+#about main{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,8 +86,10 @@ footer > *{
 #portfolioItems{
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
     flex-wrap: wrap;
+    width: 75vw;
+    gap: var(--size-3);
 }
 
 #portfolioItems > li{
@@ -98,7 +102,7 @@ footer > *{
     padding: var(--size-4);
     border-radius: var(--radius-3);
     box-shadow: var(--shadow-2);
-    flex:1 1 50%;
+    flex:1 0 50%;
 } 
 
 img{
@@ -106,3 +110,11 @@ img{
     margin: var(--size-3);
 }
 
+#resume main h1{
+    display: block;
+    margin-bottom: var(--size-2);
+    text-align: center;
+}
+#resume h2{
+    margin-bottom: var(--size-1);
+}
